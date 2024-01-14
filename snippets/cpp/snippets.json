@@ -1,0 +1,78 @@
+{
+    "Main function": {
+        "prefix": "main",
+        "body": [
+            "#include <iostream>",
+            "",
+            "int main()",
+            "{",
+            "\t$1",
+            "\treturn 0;",
+            "}"
+        ],
+        "description": "log"
+    },
+    "Print": {
+        "prefix": "cl",
+        "body": [
+            "std::cout << \"$1\" << std::endl;"
+        ],
+        "description": "Here, input simple description."
+    },
+    "Print array": {
+        "prefix": "clarr",
+        "body": [
+            "for(int i = 0; i < ${1:arr}.size(); i++){",
+            "\tstd::cout << ${1:arr}[i];",
+            "}",
+            "std::cout << std::endl;"
+        ],
+        "description": "Here, input simple description."
+    },
+    "Random array": {
+        "prefix": "arr",
+        "body": [
+            "std::vector<int> ${1:arr} = {2, 4, 8, 1, 9, 3, 5, 7};"
+        ],
+        "description": "Here, input simple description."
+    },
+    "For loop": {
+        "prefix": "forloop",
+        "body": [
+            "for(int i = 0; i < ${1:10}; i++){",
+            "\t",
+            "}"
+        ],
+        "description": "Here, input simple description."
+    },
+    "For in loop": {
+        "prefix": "forinloop",
+        "body": [
+            "for(int num : ${1:arr}){",
+            "\t",
+            "}"
+        ],
+        "description": "Here, input simple description."
+    },
+    "Include iostream": {
+        "prefix": "iios",
+        "body": [
+            "#include <iostream>"
+        ],
+        "description": "Here, input simple description."
+    },
+    "Include vector": {
+        "prefix": "ivec",
+        "body": [
+            "#include <vector>"
+        ],
+        "description": "Here, input simple description."
+    },
+    "Include string": {
+        "prefix": "istr",
+        "body": [
+            "#include <string>"
+        ],
+        "description": "Here, input simple description."
+    }
+}

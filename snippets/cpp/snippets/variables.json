@@ -1,0 +1,9 @@
+{
+    "Random array": {
+        "prefix": "arr",
+        "body": [
+            "std::vector<int> ${1:arr} = {2, 4, 8, 1, 9, 3, 5, 7};"
+        ],
+        "description": "Here, input simple description."
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Print": {
+        "prefix": "cl",
+        "body": [
+            "std::cout << \"$1\" << std::endl;"
+        ],
+        "description": "Here, input simple description."
+    },
+    "Print array": {
+        "prefix": "clarr",
+        "body": [
+            "for(int i = 0; i < ${1:arr}.size(); i++){",
+            "\tstd::cout << ${1:arr}[i];",
+            "}",
+            "std::cout << std::endl;"
+        ],
+        "description": "Here, input simple description."
+    }
+}

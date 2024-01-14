@@ -1,0 +1,26 @@
+{    
+    " Broader description goes here" : { 
+       
+      "prefix": "node", 
+       
+      "body": [  
+  
+        "snippet bodyline1",
+        "snippet bodyline2",      
+        "last line"
+      ],
+      "description": "Here, input simple description."
+    },
+    " Broader descripti" : { 
+       
+      "prefix": "woof", 
+       
+      "body": [  
+  
+        "snippet bodyline1",
+        "snippet bodyline2",      
+        "last line"
+      ],
+      "description": "Here, input simple description."
+    }
+}

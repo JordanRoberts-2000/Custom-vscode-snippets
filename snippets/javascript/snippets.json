@@ -1,0 +1,24 @@
+{    
+    " Broader description goes here" : { 
+       
+      "prefix": "test", 
+       
+      "body": [  
+  
+        "oh bo"
+      ],
+      "description": "Here, input simple description."
+    },
+    " Broader descripti" : { 
+       
+      "prefix": "woof", 
+       
+      "body": [  
+  
+        "snippet bodyline1",
+        "snippet bodyline2",      
+        "last line"
+      ],
+      "description": "Here, input simple description."
+    }
+}

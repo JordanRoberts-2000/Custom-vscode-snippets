@@ -1,0 +1,15 @@
+{
+    "Main function": {
+        "prefix": "main",
+        "body": [
+            "#include <iostream>",
+            "",
+            "int main()",
+            "{",
+            "\t$1",
+            "\treturn 0;",
+            "}"
+        ],
+        "description": "log"
+    }
+}

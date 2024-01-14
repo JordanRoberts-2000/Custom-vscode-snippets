@@ -1,0 +1,23 @@
+{
+    "Include iostream": {
+        "prefix": "iios",
+        "body": [
+            "#include <iostream>"
+        ],
+        "description": "Here, input simple description."
+    },
+    "Include vector": {
+        "prefix": "ivec",
+        "body": [
+            "#include <vector>"
+        ],
+        "description": "Here, input simple description."
+    },
+    "Include string": {
+        "prefix": "istr",
+        "body": [
+            "#include <string>"
+        ],
+        "description": "Here, input simple description."
+    }
+}

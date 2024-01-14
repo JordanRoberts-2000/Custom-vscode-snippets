@@ -1,0 +1,56 @@
+{
+    "Main function": {
+        "prefix": "rafce",
+        "body": [
+            "",
+            "",
+            "const ${1:${TM_FILENAME_BASE}} = ({}) => {",
+            "\treturn (",
+                    "\t\t${3:<>",
+                    "\t\t\t$2",
+                    "\t\t</>}",
+                "\t)",
+            "}",
+            "",
+            "export default ${1:${TM_FILENAME_BASE}}"
+        ],
+        "description": "log"
+    },
+    "hmm": {
+        "prefix": "crafce",
+        "body": [
+            "type Props = {",
+            "\tchildren: React.ReactNode",
+            "}",
+            "",
+            "const ${1:${TM_FILENAME_BASE}} = ({children}: Props) => {",
+            "\treturn (",
+                    "\t\t${3:<>",
+                    "\t\t\t$2",
+                    "\t\t</>}",
+                "\t)",
+            "}",
+            "",
+            "export default ${1:${TM_FILENAME_BASE}}"
+        ],
+        "description": "log"
+    },
+    "props": {
+        "prefix": "props",
+        "body": [
+            "type Props = {",
+            "\t$1",
+            "}"
+        ],
+        "description": "log"
+    },
+    "props with children": {
+        "prefix": "cprops",
+        "body": [
+            "type Props = {",
+            "\tchildren: React.ReactNode",
+            "}"
+        ],
+        "description": "log"
+    }
+}
