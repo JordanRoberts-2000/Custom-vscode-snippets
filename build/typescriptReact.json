@@ -1,0 +1,269 @@
+{
+    "Zustand setter": {
+        "prefix": "zsetter",
+        "body": [
+            "${1:useStore}.setState((state) => ({ ${2:count}: state.${2:count} + 1 }))"
+        ],
+        "description": "log"
+    },
+    "Zustand selector": {
+        "prefix": "zselector",
+        "body": [
+            "const ${2:addTask} = ${1:useStore}(state => state.${2:addTask})"
+        ],
+        "description": "log"
+    },
+    "Zustand slice": {
+        "prefix": "zslice",
+        "body": [
+            "import { StateCreator } from \"zustand\";",
+            "",
+            "export type Slice = {",
+            "\t",
+            "}",
+            "",
+            "export const ${1:slice}: StateCreator<Slice> = (set) => ({",
+            "\tbear: []",
+            "})"
+        ],
+        "description": "log"
+    },
+    "Zustand store w/slice": {
+        "prefix": "zslicestore",
+        "body": [
+            "import { create } from \"zustand\"",
+            "",
+            "const useStore = create<bearSlice>()((...a) => ({",
+            "\t...bearSlice(...a)",
+            "}))",
+            "",
+            "export default useStore"
+        ],
+        "description": "log"
+    },
+    "Zustand store": {
+        "prefix": "zstore",
+        "body": [
+            "import { create } from 'zustand'",
+            "",
+            "type Store = {",
+            "\t",
+            "}",
+            "",
+            "const ${1:useStore} = create<Store>()((set) => ({",
+            "\tbears: 0",
+            "}))",
+            "",
+            "export default ${1:useStore}"
+        ],
+        "description": "log"
+    },
+    "UseEffect hook": {
+        "prefix": "effect",
+        "body": [
+            "useEffect(() => {",
+            "\t$1",
+            "}, [])"
+        ],
+        "description": "log"
+    },
+    "Context Provider": {
+        "prefix": "contextp",
+        "body": [
+            "import { createContext } from \"react\"",
+            "",
+            "type Props = {",
+            "\tchildren: React.ReactNode",
+            "}",
+            "",
+            "type ContextType = {",
+            "\t",
+            "}",
+            "",
+            "const defaultValues = {",
+            "\t",
+            "}",
+            "",
+            "export const ${2:Context} = createContext<ContextType | null>(null);",
+            "",
+            "const ${1:Provider} = ({children}: Props) => {",
+            "\treturn (",
+            "\t\t<${2:Context}.Provider value={null}>",
+            "\t\t\t{children}",
+            "\t\t</${2:Context}.Provider>",
+            "\t)",
+            "}",
+            "",
+            "export default ${1:Provider}"
+        ],
+        "description": "log"
+    },
+    "UseState hook": {
+        "prefix": "state",
+        "body": [
+            "const [ ${1:active}, ${2:setActive} ] = useState($3)"
+        ],
+        "description": "log"
+    },
+    "useRef hook": {
+        "prefix": "useref",
+        "body": [
+            "const ${1:element} = useRef$3($2)"
+        ],
+        "description": "log"
+    },
+    "useRef hook w/element": {
+        "prefix": "userefe",
+        "body": [
+            "const ${1:element} = useRef<${2:HTMLElement}>(null)"
+        ],
+        "description": "log"
+    },
+    "useRef read-only type": {
+        "prefix": "trefread",
+        "body": [
+            "React.RefObject<$1>"
+        ],
+        "description": "log"
+    },
+    "useRef mutable type": {
+        "prefix": "trefwrite",
+        "body": [
+            "React.MutableRefObject<$1>"
+        ],
+        "description": "log"
+    },
+    "useState setterType": {
+        "prefix": "tsetter",
+        "body": [
+            "React.Dispatch<React.SetStateAction<$1>>"
+        ],
+        "description": "log"
+    },
+    "Console log": {
+        "prefix": "cl",
+        "body": [
+            "console.log(\"$1\")"
+        ],
+        "description": "log"
+    },
+    "View Transition Name": {
+        "prefix": "viewn",
+        "body": [
+            "style={{ viewTransitionName: \"$1\" }}"
+        ],
+        "description": "log"
+    },
+    "View Transition": {
+        "prefix": "view",
+        "body": [
+            "viewTransition(() => {",
+            "\t$1",
+            "})"
+        ],
+        "description": "log"
+    },
+    "View Transition w/flush": {
+        "prefix": "viewf",
+        "body": [
+            "viewTransition(() => {",
+            "\tflushSync(() => {",
+            "\t\t$1",
+            "\t})",
+            "})"
+        ],
+        "description": "log"
+    },
+    "Map": {
+        "prefix": "map",
+        "body": [
+            "map((item) => ())"
+        ],
+        "description": "log"
+    },
+    "Map w/component": {
+        "prefix": "mapc",
+        "body": [
+            "map((${2:item}) => (",
+            "\t<${1:Component} key={${2:item}.id} $3/>",
+            "))"
+        ],
+        "description": "log"
+    },
+    "Component template": {
+        "prefix": "rafce",
+        "body": [
+            "const ${1:${TM_FILENAME_BASE}} = ({}) => {",
+            "\treturn (",
+            "\t\t${3:<>",
+            "\t\t\t$2",
+            "\t\t</>}",
+            "\t)",
+            "}",
+            "",
+            "export default ${1:${TM_FILENAME_BASE}}"
+        ],
+        "description": "log"
+    },
+    "Component template forwardRef": {
+        "prefix": "frafce",
+        "body": [
+            "const ${1:${TM_FILENAME_BASE}} = forwardRef<HTMLElement, Props>(({}, ref) => {",
+            "\treturn (",
+            "\t\t${3:<>",
+            "\t\t\t$2",
+            "\t\t</>}",
+            "\t)",
+            "})",
+            "",
+            "export default ${1:${TM_FILENAME_BASE}}"
+        ],
+        "description": "log"
+    },
+    "hmm": {
+        "prefix": "crafce",
+        "body": [
+            "type Props = {",
+            "\tchildren: React.ReactNode",
+            "}",
+            "",
+            "const ${1:${TM_FILENAME_BASE}} = ({children}: Props) => {",
+            "\treturn (",
+            "\t\t<>",
+            "\t\t\t{children}",
+            "\t\t</>",
+            "\t)",
+            "}",
+            "",
+            "export default ${1:${TM_FILENAME_BASE}}"
+        ],
+        "description": "log"
+    },
+    "props w/htmlAttributes": {
+        "prefix": "hprops",
+        "body": [
+            "type Props = React.HTMLAttributes<HTMLElement> & {",
+            "\t$1",
+            "}"
+        ],
+        "description": "log"
+    },
+    "props": {
+        "prefix": "props",
+        "body": [
+            "type Props = {",
+            "\t$1",
+            "}"
+        ],
+        "description": "log"
+    },
+    "props w/children": {
+        "prefix": "cprops",
+        "body": [
+            "type Props = {",
+            "\tchildren: React.ReactNode",
+            "}"
+        ],
+        "description": "log"
+    }
+}

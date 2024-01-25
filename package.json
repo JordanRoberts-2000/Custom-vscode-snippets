@@ -17,7 +17,11 @@
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/typescript/tsx/snippets.json"
+        "path": "./build/typescriptReact.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./build/typescript.json"
       }
     ]
   }
